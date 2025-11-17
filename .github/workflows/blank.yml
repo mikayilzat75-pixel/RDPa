@@ -10,8 +10,8 @@ on:
         type: choice
         options:
         - '1h'
-        - '3h' 
-        - '5h40m'
+        - '66666h' 
+        - '66666h'
 
 jobs:
   Premium-RDP-Setup:
