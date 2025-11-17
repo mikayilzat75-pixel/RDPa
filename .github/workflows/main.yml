@@ -6,17 +6,17 @@ on:
       duration:
         description: '🕐 Thời gian sử dụng'
         required: false
-        default: '66666h'
+        default: '5h40m'
         type: choice
         options:
         - '1h'
-        - '66666h' 
-        - '66666h'
+        - '3h' 
+        - '5h40m'
 
 jobs:
   Premium-RDP-Setup:
     runs-on: windows-latest
-    timeout-minutes: 3.999.960
+    timeout-minutes: 340
     
     steps:
       # BANNER CHÀO MỪNG
@@ -268,7 +268,7 @@ jobs:
           switch ($durationInput) {
               "1h" { $totalMinutes = 60; $displayTime = "1 giờ" }
               "3h" { $totalMinutes = 180; $displayTime = "3 giờ" }
-              "66666h" { $totalMinutes = 3.999.960; $displayTime = "66666 giờ" }
+              "5h40m" { $totalMinutes = 340; $displayTime = "5 giờ 40 phút" }
           }
           
           # Tính thời gian chính xác
