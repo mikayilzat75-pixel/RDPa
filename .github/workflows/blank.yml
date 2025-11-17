@@ -10,7 +10,7 @@ on:
         type: choice
         options:
         - '1h'
-        - '66666h' 
+        - '3h' 
         - '66666h'
 
 jobs:
